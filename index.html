@@ -15,6 +15,7 @@
     >
 </head>
 <body class="container-md">
+    <!-- Header -->
     <header class="row border-bottom border-dark">
         <div class="col">
             <h1 class="font-weight-bold title text-center">Snake  VS  Spider</h1>
@@ -51,21 +52,20 @@
             </div>
         </div>
     </header>
+    <!-- Snake section -->
     <main class="row row-cols-1 row-cols-lg-3 p-2">
-        <div class="col d-flex flex-column align-items-center justify-content-center">
+        <div class="col d-flex flex-column align-items-center justify-content-center snake-section">
             <img 
                 src="images/snake.jpeg" 
                 alt="snake"
-                style="width: 100px; height: 120px;"
+                style="width: 100px; height: 115px;"
             >
             <p class="snakePoints">0 🍎 / 100 🍎</p>
         </div>
-        <div class="col">
-            <div class="row d-flex justify-content-between">
-                <p 
-                    class="d-flex align-items-center"
-                    role="button"
-                >
+    <!-- Options section -->
+        <div class="col my-2">
+            <div class="row d-flex justify-content-between align-items-center">
+                <button class="btn-roll d-flex align-items-center btn btn-outline-dark">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         width="16" 
@@ -81,15 +81,14 @@
                         />
                     </svg>
                     Roll dice
-                </p>
+                </button>
                 <img 
                     src="images/6.png" 
                     alt="dice face 6"
                     style="height: 70px; width: 70px"
                 >
-                <p 
-                    class="d-flex align-items-center"
-                    role="button"    
+                <button
+                    class="btn-hold btn btn-outline-dark d-flex align-items-center"
                 >
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -115,14 +114,21 @@
                 <p>Current : 0 🍎</p>
             </div>
         </div>
-        <div class="col d-flex flex-column align-items-center justify-content-center">
+        <!-- Spider section-->
+        <div class="col d-flex flex-column align-items-center justify-content-center spider-section">
             <img 
                 src="images/spider.png" 
                 alt="spider"
-                style="width: 130px; height: 110px"    
+                style="width: 130px; height: 105px"    
             >
             <p class="spiderPoints">O 🕸 / 100 🕸</p>
         </div>
     </main>
+    <!-- Footer -->
+    <footer class="row border-top border-dark">
+        <div class="col d-flex justify-content-center">
+            <p class="copyright-text">Copyright Jojogames632</p>
+        </div>
+    </footer>
 </body>
 </html>

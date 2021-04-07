@@ -5,3 +5,18 @@ body {
 .title {
     font-size: 30px;
 }
+.copyright-text {
+    font-size: 10px;
+}
+.btn-roll {
+    height: 30px;
+}
+.btn-hold {
+    height: 30px;
+}
+.snake-section {
+    height: 160px;
+}
+.spider-section {
+    height: 160px;
+}
