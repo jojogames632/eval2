@@ -1,22 +1,168 @@
-body {
-    font-family: 'Lato', sans-serif;
+/* Jonathan Viault */
+
+@media screen and (max-width: 374px) { /* small mobiles */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 153px;
+    }
+    .spider-section {
+        height: 153px;
+    }
+    .snake-image {
+        width: 80px;
+        height: 95px;
+    }
+    .spider-image {
+        width: 110px;
+        height: 85px;
+    }
 }
 
-.title {
-    font-size: 30px;
+@media screen and (min-width: 375px) { /* iphone X size */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
+    .snake-image {
+        width: 120px;
+        height: 135px;
+    }
+    .spider-image {
+        width: 150px;
+        height: 125px;
+    }
 }
-.copyright-text {
-    font-size: 10px;
+
+@media screen and (min-width: 576px) { /* mobiles */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
 }
-.btn-roll {
-    height: 30px;
+
+@media screen and (min-width: 768px) { /* tablets */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
 }
-.btn-hold {
-    height: 30px;
+
+@media screen and (min-width: 992px) { /* big tablets */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
 }
-.snake-section {
-    height: 160px;
+
+@media screen and (min-width: 1200px) { /* pc */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
 }
-.spider-section {
-    height: 160px;
+
+@media screen and (min-width: 1400px) { /* big screen */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 200px;
+    }
+    .spider-section {
+        height: 200px;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
 }
