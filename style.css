@@ -42,9 +42,33 @@
     }
     .options-section {
         margin-top: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     footer {
         margin-top: 7px;
+    }
+    .options-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .new-game-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .rules-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .roll-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .hold-icon {
+        height: 16px;
+        width: 16px;
     }
 }
 
@@ -83,6 +107,9 @@
     .options-section {
         height: 20vh;
         margin-top: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     .dice-image {
         height: 70px;
@@ -102,6 +129,27 @@
     footer {
         margin-top: 15px;
     }
+    .options-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .new-game-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .rules-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .roll-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .hold-icon {
+        height: 16px;
+        width: 16px;
+    }
 }
 
 @media screen and (min-width: 768px) { /* tablets */
@@ -109,13 +157,23 @@
         font-size: 40px;
     }
     .copyright-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .btn-roll {
-        height: 30px;
+        height: 50px;
+        font-size: 25px;
     }
     .btn-hold {
-        height: 30px;
+        height: 50px;
+        font-size: 25px;
+    }
+    .new-game-btn {
+        height: 50px;
+        font-size: 25px;
+    }
+    .rules-btn {
+        height: 50px;
+        font-size: 25px;
     }
     .snake-section {
         height: 27vh;
@@ -142,14 +200,18 @@
     .options-section {
         height: 20vh;
         margin-top: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     .dice-image {
-        height: 100px;
-        width: 100px;
+        height: 130px;
+        width: 130px;
     }
     header {
         height: 15vh;
         margin-bottom: 15px;
+        width: 70%;
     }
     .header-btn {
         margin-top: 20px;
@@ -160,14 +222,177 @@
     .current-points {
         font-size: 25px;
     }
+    .options-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .new-game-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .rules-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .roll-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .hold-icon {
+        height: 20px;
+        width: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) { /* big tablets */
-    
+   .title {
+        font-size: 60px;
+    }
+    .snake-section {
+        height: 35vh;
+    }
+    .spider-section {
+        height: 35vh;
+    }
+    .options-section {
+        height: 35vh;
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    header {
+        width: 70vw;
+    }
+    aside {
+        height: 35vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
+    }
+    .copyright-text {
+        font-size: 20px;
+    }
+    .btn-roll {
+        font-size: 25px;
+        height: 50px;
+    }
+    .btn-hold {
+        font-size: 25px;
+        height: 50px;
+    }
+    .snake-image {
+        width: 160px;
+        height: 185px;
+    }
+    .spider-image {
+        width: 200px;
+        height: 165px;
+    }
+    .snake-points {
+        margin-top: 40px;
+        font-size: 35px; 
+    }
+    .spider-points {
+        margin-top: 40px;
+        font-size: 35px
+    }
+    .dice-image {
+        height: 175px;
+        width: 175px;
+    }
+    .current-points {
+        font-size: 35px;
+    }
+    .new-game-btn {
+        font-size: 30px;
+        height: 60px;
+    }
+    .rules-btn {
+        font-size: 30px;
+        height: 60px;
+    }
+    .history-zone {
+        height: 27vh;
+    }
+    .clean-btn {
+        height: 50px;
+        font-size: 25px;
+    }
+    .new-game-icon {
+        height: 25px;
+        width: 25px;
+    }
+    .rules-icon {
+        height: 25px;
+        width: 25px;
+    }
+    .roll-icon {
+        height: 25px;
+        width: 25px;
+    }
+    .hold-icon {
+        height: 25px;
+        width: 25px;
+    }
 }
 
 @media screen and (min-width: 1200px) { /* pc */
+    title {
+        font-size: 50px;
+    }
+    main {
+        height: 75vh;
+        align-items: center;
+    }
+    .snake-section {
+        height: 35vh;
+    }
+    .spider-section {
+        height: 35vh;
+    }
+    header {
+        width: 50vw;
+    }
+    .copyright-text {
+
+    }
+    .btn-roll {
+
+    }
+    .btn-hold {
+
+    }
+    .snake-image {
+        width: 160px;
+        height: 185px;
+    }
+    .spider-image {
+        width: 200px;
+        height: 165px;
+    }
+    .snake-points {
+        margin-top: 40px;
+        font-size: 35px; 
+    }
+    .spider-points {
+        margin-top: 40px;
+        font-size: 35px
+    }
+    .dice-image {
     
+    }
+    .header {
+
+    }
+    .header-btn {
+    
+    }
+    footer {
+    
+    }
+    .current-points {
+    
+    }  
 }
 
 @media screen and (min-width: 1400px) { /* big screen */
