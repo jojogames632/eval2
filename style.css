@@ -15,9 +15,11 @@
     }
     .snake-section {
         height: 27vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .spider-section {
         height: 27vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .snake-image {
         width: 80px;
@@ -33,6 +35,7 @@
     }
     header {
         height: 15vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .header-btn {
         margin-top: 10px;
@@ -46,6 +49,65 @@
 }
 
 @media screen and (min-width: 375px) { /* iphone X size */
+    .title {
+        font-size: 30px;
+    }
+    .copyright-text {
+        font-size: 12px;
+    }
+    .btn-roll {
+        height: 30px;
+    }
+    .btn-hold {
+        height: 30px;
+    }
+    .snake-section {
+        height: 27vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
+    }
+    .spider-section {
+        height: 27vh;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
+    }
+    .snake-image {
+        width: 100px;
+        height: 125px;
+    }
+    .spider-image {
+        width: 140px;
+        height: 105px;
+    }
+    .snake-points {
+        margin-top: 20px;
+    }
+    .spider-points {
+        margin-top: 20px;
+    }
+    .options-section {
+        height: 20vh;
+        margin-top: 20px;
+    }
+    .dice-image {
+        height: 70px;
+        width: 70px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    header {
+        height: 15vh;
+        margin-bottom: 15px;
+        box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
+    }
+    .header-btn {
+        margin-top: 20px;
+    }
+    footer {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) { /* tablets */
     .title {
         font-size: 30px;
     }
@@ -101,113 +163,16 @@
     }
 }
 
-@media screen and (min-width: 576px) { /* mobiles */
-    .title {
-        font-size: 30px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-    .btn-roll {
-        height: 30px;
-    }
-    .btn-hold {
-        height: 30px;
-    }
-    .snake-section {
-        height: 200px;
-    }
-    .spider-section {
-        height: 200px;
-    }
-    .dice-image {
-        height: 70px;
-        width: 70px;
-    }
-}
-
-@media screen and (min-width: 768px) { /* tablets */
-    .title {
-        font-size: 30px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-    .btn-roll {
-        height: 30px;
-    }
-    .btn-hold {
-        height: 30px;
-    }
-    .snake-section {
-        height: 200px;
-    }
-    .spider-section {
-        height: 200px;
-    }
-}
-
 @media screen and (min-width: 992px) { /* big tablets */
-    .title {
-        font-size: 30px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-    .btn-roll {
-        height: 30px;
-    }
-    .btn-hold {
-        height: 30px;
-    }
-    .snake-section {
-        height: 200px;
-    }
-    .spider-section {
-        height: 200px;
-    }
+    
 }
 
 @media screen and (min-width: 1200px) { /* pc */
-    .title {
-        font-size: 30px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-    .btn-roll {
-        height: 30px;
-    }
-    .btn-hold {
-        height: 30px;
-    }
-    .snake-section {
-        height: 200px;
-    }
-    .spider-section {
-        height: 200px;
-    }
+    
 }
 
 @media screen and (min-width: 1400px) { /* big screen */
-    .title {
-        font-size: 30px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-    .btn-roll {
-        height: 30px;
-    }
-    .btn-hold {
-        height: 30px;
-    }
-    .snake-section {
-        height: 200px;
-    }
-    .spider-section {
-        height: 200px;
-    }
+    
 }
 
 body {
