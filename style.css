@@ -124,26 +124,28 @@
         height: 27vh;
     }
     .snake-image {
-        width: 100px;
-        height: 125px;
+        width: 130px;
+        height: 155px;
     }
     .spider-image {
-        width: 140px;
-        height: 105px;
+        width: 170px;
+        height: 135px;
     }
     .snake-points {
         margin-top: 20px;
+        font-size: 25px;
     }
     .spider-points {
         margin-top: 20px;
+        font-size: 25px;
     }
     .options-section {
         height: 20vh;
         margin-top: 20px;
     }
     .dice-image {
-        height: 70px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
     }
     header {
         height: 15vh;
@@ -154,6 +156,9 @@
     }
     footer {
         margin-top: 15px;
+    }
+    .current-points {
+        font-size: 25px;
     }
 }
 
