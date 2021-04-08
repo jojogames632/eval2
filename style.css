@@ -49,9 +49,6 @@
 }
 
 @media screen and (min-width: 375px) { /* iphone X size */
-    .title {
-        font-size: 30px;
-    }
     .copyright-text {
         font-size: 12px;
     }
@@ -109,7 +106,7 @@
 
 @media screen and (min-width: 768px) { /* tablets */
     .title {
-        font-size: 30px;
+        font-size: 40px;
     }
     .copyright-text {
         font-size: 12px;
@@ -148,9 +145,6 @@
         height: 70px;
         width: 70px;
     }
-    .title {
-        font-size: 35px;
-    }
     header {
         height: 15vh;
         margin-bottom: 15px;
@@ -177,4 +171,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-image: url(./images/nature-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
