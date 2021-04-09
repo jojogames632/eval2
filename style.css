@@ -34,7 +34,7 @@
         width: 70px;
     }
     header {
-        height: 15vh;
+        height: 13vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .header-btn {
@@ -127,7 +127,7 @@
         font-size: 35px;
     }
     header {
-        height: 15vh;
+        height: 13vh;
         margin-bottom: 15px;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
@@ -217,7 +217,7 @@
         width: 130px;
     }
     header {
-        height: 15vh;
+        height: 12vh;
         margin-bottom: 15px;
         width: 70%;
     }
@@ -251,11 +251,14 @@
         height: 20px;
         width: 20px;
     }
+    aside {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) { /* big tablets */
    .title {
-        font-size: 60px;
+        font-size: 45px;
     }
     .snake-section {
         height: 35vh;
@@ -275,10 +278,13 @@
         flex-direction: column;
     }
     header {
+        height: 12vh;
         width: 70vw;
     }
     aside {
         height: 35vh;
+        display: block;
+        width: 75%;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .copyright-text {
@@ -327,8 +333,8 @@
         height: 27vh;
     }
     .clean-btn {
-        height: 50px;
-        font-size: 25px;
+        height: 35px;
+        font-size: 15px;
     }
     .new-game-icon {
         height: 25px;
@@ -356,7 +362,11 @@
 
 @media screen and (min-width: 1200px) { /* pc */
     .title {
-        font-size: 60px;
+        font-size: 45px;
+    }
+    .options-btn {
+        display: flex;
+        flex-direction: column;
     }
     .snake-section {
         height: 35vh;
@@ -376,6 +386,8 @@
     }
     aside {
         height: 35vh;
+        display: block;
+        width: 55%;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .copyright-text {
@@ -424,8 +436,8 @@
         height: 27vh;
     }
     .clean-btn {
-        height: 60px;
-        font-size: 30px;
+        height: 35px;
+        font-size: 15px;
     }
     .new-game-icon {
         height: 25px;
@@ -447,7 +459,7 @@
 
 @media screen and (min-width: 1400px) { /* big screen */
     .title {
-        font-size: 70px;
+        font-size: 55px;
     }
     .snake-section {
         height: 35vh;
@@ -467,6 +479,8 @@
     }
     aside {
         height: 35vh;
+        display: block;
+        width: 55%;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
     .copyright-text {
@@ -515,8 +529,8 @@
         height: 27vh;
     }
     .clean-btn {
-        height: 60px;
-        font-size: 30px;
+        height: 35px;
+        font-size: 15px;
     }
     .new-game-icon {
         height: 30px;
@@ -533,9 +547,6 @@
     .hold-icon {
         height: 30px;
         width: 30px;
-    }
-    aside {
-        width: 55%;
     }
     .modal-body p {
         font-size: 23px;
