@@ -338,6 +338,12 @@
         height: 25px;
         width: 25px;
     }
+    .modal-body p {
+        font-size: 20px;
+    }
+    .got-it-btn {
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 1200px) { /* pc */
@@ -522,6 +528,12 @@
     }
     aside {
         width: 55%;
+    }
+    .modal-body p {
+        font-size: 23px;
+    }
+    .got-it-btn {
+        font-size: 27px;
     }
 }
 

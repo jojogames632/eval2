@@ -33,7 +33,11 @@
                         </svg>
                         New game
                     </button>
-                    <button class="btn btn-sm btn-dark rules-btn font-weight-bold">
+                    <button 
+                        class="btn btn-sm btn-dark rules-btn font-weight-bold"
+                        data-toggle="modal"
+                        data-target="#rules"    
+                    >
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="currentColor" 
@@ -146,8 +150,70 @@
     <!-- Footer -->
     <footer class="row border-top border-dark">
         <div class="col d-flex justify-content-center">
-            <p class="copyright-text">Copyright Jojogames632</p>
+            <p class="copyright-text">Copyright - Jojogames632</p>
         </div>
     </footer>
+    <div 
+        class="modal"
+        id="rules"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="rulesTitle"
+        aria-hidden="true"
+    >
+        <div 
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 
+                        class="modal-title font-weight-bold" 
+                        id="rulesTitles"
+                    >
+                        Rules
+                    </h3>
+                    <button 
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="close"
+                    >
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The game includes 2 players on one screen. Each player has a temporary score (ROUND) and a global score (GLOBAL).
+                        At each turn, the player has his initialized to 0 and can roll a die as many times as he wants. The result of a
+                        roll is added to the ROUND. During his turn, the player can decide at any time to:
+                    </p>
+                    <p>
+                        - Click on the "Hold" option, which allows to send the points of the ROUND to the GLOBAL.
+                        This will be the other player's turn. 
+                    </p>
+                    <p> 
+                        - Roll the dice. If he rolls a 1, his ROUND score is lost and his turn is over.
+                    </p>
+                    <p>
+                        The first player to reach 100 points on global wins the game.
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button 
+                        type="button"
+                        data-dismiss="modal"
+                        class="btn btn-success got-it-btn"
+                    >
+                    I got it!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
