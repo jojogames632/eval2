@@ -98,10 +98,10 @@
         width: 140px;
         height: 105px;
     }
-    .snake-points {
+    #snake-points {
         margin-top: 20px;
     }
-    .spider-points {
+    #spider-points {
         margin-top: 20px;
     }
     .options-section {
@@ -189,11 +189,11 @@
         width: 170px;
         height: 135px;
     }
-    .snake-points {
+    #snake-points {
         margin-top: 20px;
         font-size: 25px;
     }
-    .spider-points {
+    #spider-points {
         margin-top: 20px;
         font-size: 25px;
     }
@@ -219,7 +219,7 @@
     footer {
         margin-top: 15px;
     }
-    .current-points {
+    #current-points {
         font-size: 25px;
     }
     .options-btn {
@@ -292,11 +292,11 @@
         width: 200px;
         height: 165px;
     }
-    .snake-points {
+    #snake-points {
         margin-top: 40px;
         font-size: 35px; 
     }
-    .spider-points {
+    #spider-points {
         margin-top: 40px;
         font-size: 35px
     }
@@ -304,7 +304,7 @@
         height: 175px;
         width: 175px;
     }
-    .current-points {
+    #current-points {
         font-size: 35px;
     }
     .new-game-btn {
@@ -389,11 +389,11 @@
         width: 200px;
         height: 165px;
     }
-    .snake-points {
+    #snake-points {
         margin-top: 40px;
         font-size: 35px; 
     }
-    .spider-points {
+    #spider-points {
         margin-top: 40px;
         font-size: 35px
     }
@@ -401,7 +401,7 @@
         height: 175px;
         width: 175px;
     }
-    .current-points {
+    #current-points {
         font-size: 35px;
     }
     .new-game-btn {
@@ -416,8 +416,8 @@
         height: 27vh;
     }
     .clean-btn {
-        height: 50px;
-        font-size: 25px;
+        height: 60px;
+        font-size: 30px;
     }
     .new-game-icon {
         height: 25px;
@@ -480,11 +480,11 @@
         width: 260px;
         height: 225px;
     }
-    .snake-points {
+    #snake-points {
         margin-top: 40px;
         font-size: 42px; 
     }
-    .spider-points {
+    #spider-points {
         margin-top: 40px;
         font-size: 42px
     }
@@ -492,7 +492,7 @@
         height: 250px;
         width: 250px;
     }
-    .current-points {
+    #current-points {
         font-size: 45px;
     }
     .new-game-btn {
