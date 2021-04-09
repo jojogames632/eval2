@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 374px) { /* small mobiles */
     .title {
-        font-size: 30px;
+        font-size: 25px;
     }
     .copyright-text {
         font-size: 10px;
@@ -69,6 +69,14 @@
     .hold-icon {
         height: 16px;
         width: 16px;
+    }
+    #newGameBtn {
+        font-size: 10px;
+        height: 25px;
+    }
+    #rulesBtn {
+        font-size: 10px;
+        height: 25px;
     }
 }
 
@@ -167,7 +175,7 @@
         height: 50px;
         font-size: 25px;
     }
-    .new-game-btn {
+    #new-game-btn {
         height: 50px;
         font-size: 25px;
     }
@@ -307,7 +315,7 @@
     #current-points {
         font-size: 35px;
     }
-    .new-game-btn {
+    #new-game-btn {
         font-size: 30px;
         height: 60px;
     }
@@ -404,7 +412,7 @@
     #current-points {
         font-size: 35px;
     }
-    .new-game-btn {
+    #new-game-btn {
         font-size: 30px;
         height: 60px;
     }
@@ -495,7 +503,7 @@
     #current-points {
         font-size: 45px;
     }
-    .new-game-btn {
+    #new-game-btn {
         font-size: 30px;
         height: 60px;
     }
@@ -542,4 +550,5 @@ body {
     background-image: url(./images/nature-background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
