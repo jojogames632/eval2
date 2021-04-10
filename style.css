@@ -13,11 +13,11 @@
     #holdBtn {
         height: 30px;
     }
-    .snake-section {
+    #snakeSection {
         height: 27vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
-    .spider-section {
+    #spiderSection {
         height: 27vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
@@ -29,7 +29,7 @@
         width: 110px;
         height: 85px;
     }
-    .dice-image {
+    #diceImage {
         height: 70px;
         width: 70px;
     }
@@ -87,11 +87,11 @@
     #holdBtn {
         height: 30px;
     }
-    .snake-section {
+    #snakeSection {
         height: 27vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
-    .spider-section {
+    #spiderSection {
         height: 27vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
     }
@@ -116,7 +116,7 @@
         display: flex;
         justify-content: center;
     }
-    .dice-image {
+    #diceImage {
         height: 70px;
         width: 70px;
     }
@@ -177,10 +177,10 @@
         height: 40px;
         font-size: 15px;
     }
-    .snake-section {
+    #snakeSection {
         height: 27vh;
     }
-    .spider-section {
+    #spiderSection {
         height: 27vh;
     }
     .snake-image {
@@ -206,7 +206,7 @@
         display: flex;
         justify-content: center;
     }
-    .dice-image {
+    #diceImage {
         height: 130px;
         width: 130px;
     }
@@ -251,10 +251,10 @@
    .title {
         font-size: 45px;
     }
-    .snake-section {
+    #snakeSection {
         height: 35vh;
     }
-    .spider-section {
+    #spiderSection {
         height: 35vh;
     }
     .options-section {
@@ -305,7 +305,7 @@
         margin-top: 40px;
         font-size: 35px
     }
-    .dice-image {
+    #diceImage {
         height: 135px;
         width: 135px;
     }
@@ -323,7 +323,7 @@
     .history-zone {
         height: 32vh;
     }
-    .clean-btn {
+    #cleanBtn {
         height: 35px;
         font-size: 15px;
     }
@@ -359,10 +359,10 @@
         display: flex;
         flex-direction: column;
     }
-    .snake-section {
+    #snakeSection {
         height: 35vh;
     }
-    .spider-section {
+    #spiderSection {
         height: 35vh;
     }
     .options-section {
@@ -412,7 +412,7 @@
         margin-top: 30px;
         font-size: 30px
     }
-    .dice-image {
+    #diceImage {
         height: 125px;
         width: 125px;
     }
@@ -430,7 +430,7 @@
     .history-zone {
         height: 25vh;
     }
-    .clean-btn {
+    #cleanBtn {
         height: 35px;
         font-size: 15px;
     }
@@ -460,10 +460,10 @@
         display: flex;
         flex-direction: column;
     }
-    .snake-section {
+    #snakeSection {
         height: 35vh;
     }
-    .spider-section {
+    #spiderSection {
         height: 35vh;
     }
     .options-section {
@@ -513,7 +513,7 @@
         margin-top: 30px;
         font-size: 30px
     }
-    .dice-image {
+    #diceImage {
         height: 125px;
         width: 125px;
     }
@@ -531,7 +531,7 @@
     .history-zone {
         height: 26vh;
     }
-    .clean-btn {
+    #cleanBtn {
         height: 35px;
         font-size: 15px;
     }
@@ -557,10 +557,10 @@
     .title {
         font-size: 55px;
     }
-    .snake-section {
+    #snakeSection {
         height: 35vh;
     }
-    .spider-section {
+    #spiderSection {
         height: 35vh;
     }
     .options-section {
@@ -607,7 +607,7 @@
         margin-top: 25px;
         font-size: 27px
     }
-    .dice-image {
+    #diceImage {
         height: 175px;
         width: 175px;
     }
@@ -625,7 +625,7 @@
     .history-zone {
         height: 27vh;
     }
-    .clean-btn {
+    #cleanBtn {
         height: 35px;
         font-size: 15px;
     }

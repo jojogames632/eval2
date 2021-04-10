@@ -58,7 +58,10 @@
     </header>
     <main class="row row-cols-1 row-cols-lg-3 p-2 mt-2 mt-lg-3">
         <!-- Snake section -->
-        <div class="rounded border border-dark col d-flex flex-column align-items-center justify-content-center snake-section">
+        <div 
+            class="rounded border border-dark col d-flex flex-column align-items-center justify-content-center"
+            id="snakeSection"    
+        >
             <img 
                 src="images/snake.png" 
                 alt="snake"
@@ -91,7 +94,8 @@
                     <img 
                         src="images/6.png" 
                         alt="dice face"
-                        class="dice-image mx-3 mx-md-5 my-lg-1"
+                        class="mx-3 mx-md-5 my-lg-1"
+                        id="diceImage"
                     >
                     <button 
                         class="font-weight-bold shadow btn btn-outline-dark d-flex align-items-center"
@@ -121,7 +125,10 @@
             </div>
         </div>
         <!-- Spider section-->
-        <div class="rounded border border-dark col d-flex flex-column align-items-center justify-content-center spider-section">
+        <div 
+            class="rounded border border-primary col d-flex flex-column align-items-center justify-content-center"
+            id="spiderSection"    
+        >
             <img 
                 src="images/spider.png" 
                 alt="spider"
@@ -141,7 +148,10 @@
             </div>
             <!-- Clean button-->
             <div class="row d-flex justify-content-center">
-                <button class="clean-btn font-weight-bold btn btn-dark">
+                <button 
+                    class="font-weight-bold btn btn-dark"
+                    id="cleanBtn"    
+                >
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         width="25" 
