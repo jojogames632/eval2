@@ -7,10 +7,10 @@
     .copyright-text {
         font-size: 10px;
     }
-    .btn-roll {
+    #rollBtn {
         height: 30px;
     }
-    .btn-hold {
+    #holdBtn {
         height: 30px;
     }
     .snake-section {
@@ -36,9 +36,6 @@
     header {
         height: 13vh;
         box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.7);
-    }
-    .header-btn {
-        margin-top: 10px;
     }
     .options-section {
         margin-top: 10px;
@@ -84,10 +81,10 @@
     .copyright-text {
         font-size: 12px;
     }
-    .btn-roll {
+    #rollBtn {
         height: 30px;
     }
-    .btn-hold {
+    #holdBtn {
         height: 30px;
     }
     .snake-section {
@@ -167,11 +164,11 @@
     .copyright-text {
         font-size: 15px;
     }
-    .btn-roll {
+    #rolleBtn {
         height: 50px;
         font-size: 25px;
     }
-    .btn-hold {
+    #holdBtn {
         height: 50px;
         font-size: 25px;
     }
@@ -228,7 +225,7 @@
         margin-top: 15px;
     }
     #current-points {
-        font-size: 25px;
+        font-size: 27px;
     }
     .options-btn {
         display: flex;
@@ -290,13 +287,13 @@
     .copyright-text {
         font-size: 20px;
     }
-    .btn-roll {
-        font-size: 25px;
-        height: 50px;
+    #rollBtn {
+        font-size: 20px;
+        height: 40px;
     }
-    .btn-hold {
-        font-size: 25px;
-        height: 50px;
+    #holdBtn {
+        font-size: 20px;
+        height: 40px;
     }
     .snake-image {
         width: 160px;
@@ -315,11 +312,11 @@
         font-size: 35px
     }
     .dice-image {
-        height: 175px;
-        width: 175px;
+        height: 135px;
+        width: 135px;
     }
     #current-points {
-        font-size: 35px;
+        font-size: 27px;
     }
     #new-game-btn {
         font-size: 30px;
@@ -393,11 +390,11 @@
     .copyright-text {
         font-size: 20px;
     }
-    .btn-roll {
+    #rollBtn {
         font-size: 25px;
         height: 50px;
     }
-    .btn-hold {
+    #holdBtn {
         font-size: 25px;
         height: 50px;
     }
@@ -422,7 +419,7 @@
         width: 175px;
     }
     #current-points {
-        font-size: 35px;
+        font-size: 27px;
     }
     #new-game-btn {
         font-size: 30px;
@@ -476,6 +473,7 @@
     }
     header {
         width: 50vw;
+        height: 15vh;
     }
     aside {
         height: 35vh;
@@ -486,36 +484,36 @@
     .copyright-text {
         font-size: 20px;
     }
-    .btn-roll {
-        font-size: 30px;
-        height: 60px;
+    #rollBtn {
+        font-size: 25px;
+        height: 50px;
     }
-    .btn-hold {
-        font-size: 30px;
-        height: 60px;
+    #holdBtn {
+        font-size: 25px;
+        height: 50px;
     }
     .snake-image {
-        width: 220px;
-        height: 245px;
+        width: 120px;
+        height: 145px;
     }
     .spider-image {
-        width: 260px;
-        height: 225px;
+        width: 160px;
+        height: 125px;
     }
     #snake-points {
-        margin-top: 40px;
-        font-size: 42px; 
+        margin-top: 25px;
+        font-size: 27px; 
     }
     #spider-points {
-        margin-top: 40px;
-        font-size: 42px
+        margin-top: 25px;
+        font-size: 27px
     }
     .dice-image {
-        height: 250px;
-        width: 250px;
+        height: 175px;
+        width: 175px;
     }
     #current-points {
-        font-size: 45px;
+        font-size: 27px;
     }
     #new-game-btn {
         font-size: 30px;
