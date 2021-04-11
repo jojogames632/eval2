@@ -77,11 +77,14 @@ const setSnakeTurn = () => {
 // Show the winner and restart game
 const endGame = (winner) => {
     alert(winner + ' WINNER !!');
+    cleanHistory();
     newGame();
 }
 
 // Restart game
 const newGame = () => {
+    setSpiderTurn();
+    cleanHistory();
     currentPoints = 0;
     snakePoints = 0;
     spiderPoints = 0;
