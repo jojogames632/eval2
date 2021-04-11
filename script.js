@@ -40,8 +40,9 @@ const cleanHistory = () => {
 // Fill the history zone
 const historyFill = (randomNumber) => {
     let newP = document.createElement('p');
+    let playerLogo = isSpiderTurn ? '🕷' : '🐍';
     let player = isSpiderTurn ? '🕷 Spider' : '🐍 Snake';
-    newP.innerText = `${player} turn : Roll n° ${rollNumber} - Result = ${randomNumber} - Current = ${currentPoints}`;
+    newP.innerText = `${player} turn : Roll n° ${rollNumber} - Result = ${randomNumber} - Current = ${currentPoints} ${playerLogo}`;
     newP.classList.add('mr-3');
     historyZone.append(newP);
     // If 1 is rolled -> add a new line with current player
