@@ -12,8 +12,11 @@ let currentPointsText = document.getElementById('current-points');
 
 // Points
 let snakePoints = 0;
-let spiderPoints = 90;
+let spiderPoints = 0;
 let currentPoints = 0;
+
+// Roll number
+let rollNumber = 0;
 
 // Dice image
 let diceImage = document.getElementById('diceImage');
@@ -25,6 +28,33 @@ let isSpiderTurn = true;
 let spiderSection = document.getElementById('spiderSection');
 let snakeSection = document.getElementById('snakeSection');
 
+// History zone
+let historyZone = document.querySelector('.history-zone');
+
+const cleanHistory = () => {
+    while (historyZone.firstChild) {
+        historyZone.removeChild(historyZone.firstChild);
+    }
+}
+
+// Fill the history zone
+const historyFill = (randomNumber) => {
+    let newP = document.createElement('p');
+    let player = isSpiderTurn ? '🕷 Spider' : '🐍 Snake';
+    newP.innerText = `${player} turn : Roll n° ${rollNumber} - Result = ${randomNumber} - Current = ${currentPoints}`;
+    newP.classList.add('mr-3');
+    historyZone.append(newP);
+    // If 1 is rolled -> add a new line with current player
+    if (randomNumber === 1) {
+        let newP = document.createElement('p');
+        let player = isSpiderTurn ? '🐍 🐍' : '🕷 🕷';
+        newP.innerText = `${player} TURN ${player}`;
+        newP.classList.add('mr-3');
+        historyZone.append(newP); 
+    }
+}
+
+// Set spider turn and change border colors
 const setSpiderTurn = () => {
     currentPoints = 0;
     isSpiderTurn = true;
@@ -34,6 +64,7 @@ const setSpiderTurn = () => {
     spiderSection.classList.add('border-primary');
 }
 
+// Set snake turn and change border colors
 const setSnakeTurn = () => {
     currentPoints = 0;
     isSpiderTurn = false;
@@ -43,11 +74,13 @@ const setSnakeTurn = () => {
     snakeSection.classList.add('border-primary');
 }
 
+// Show the winner and restart game
 const endGame = (winner) => {
     alert(winner + ' WINNER !!');
     newGame();
 }
 
+// Restart game
 const newGame = () => {
     currentPoints = 0;
     snakePoints = 0;
@@ -57,60 +90,53 @@ const newGame = () => {
     currentPointsText.innerText = 'Current : 0 🕷';
 }
 
+// Get a random number between 1 and 6
 const randomNumberSix = () => {
     return Math.floor(Math.random() * 6) + 1;
 }
 
+// Do actions depending on roll. Update dice image and current points text.
 const rollDice = () => {
     let randomNumber = randomNumberSix();
-    switch (randomNumber) {
-        case 1:
-            isSpiderTurn ? setSnakeTurn() : setSpiderTurn();
-            break;
-        case 2:
-            currentPoints += 2;
-            break;
-        case 3:
-            currentPoints += 3;
-            break;
-        case 4:
-            currentPoints += 4;
-            break;
-        case 5:
-            currentPoints += 5;
-            break;
-        default: 
-            currentPoints += 6;
-            break;
+    rollNumber++;
+    if (randomNumber === 1) {
+        currentPoints = 0;
+        historyFill(randomNumber);
+        isSpiderTurn ? setSnakeTurn() : setSpiderTurn();
+        rollNumber = 0;
+    } else {
+        currentPoints += randomNumber;
+        historyFill(randomNumber);
     }
     diceImage.setAttribute('src', `images/${randomNumber}.png`);
     currentPointsText.innerText = `Current : ${currentPoints} ${isSpiderTurn ? '🕷' : '🐍'}`
 }
 
+// Add points to global, change player turn and update points text
 const hold = () => {
+    rollNumber = 0;
     if (isSpiderTurn) {
         spiderPoints += currentPoints;
         if (spiderPoints >= 100) {
             endGame('SPIDER');
+        } else {
+            spiderPointsText.innerText = `${spiderPoints} 🕷 / 100 🕷`;
+            currentPointsText.innerText = 'Current : 0 🐍';
+            setSnakeTurn();
         }
-        spiderPointsText.innerText = `${spiderPoints} 🕷 / 100 🕷`;
-        currentPointsText.innerText = 'Current : 0 🐍';
-        setSnakeTurn();
     } else {
         snakePoints += currentPoints;
         if (snakePoints >= 100) {
             endGame('SNAKE');
+        } else {
+            snakePointsText.innerText = `${snakePoints} 🐍 / 100 🐍`;
+            currentPointsText.innerText = 'Current : 0 🕷';
+            setSpiderTurn();
         }
-        snakePointsText.innerText = `${snakePoints} 🐍 / 100 🐍`;
-        currentPointsText.innerText = 'Current : 0 🕷';
-        setSpiderTurn();
     }
 }
 
-const cleanHistory = () => {
-
-}
-
+// Events for buttons
 rollBtn.addEventListener('click', rollDice);
 holdBtn.addEventListener('click', hold);
 cleanBtn.addEventListener('click', cleanHistory);
